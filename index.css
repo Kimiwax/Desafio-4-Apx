@@ -1,0 +1,33 @@
+body{
+    box-sizing: border-box;
+    margin: 0;
+}
+
+.header-principal{
+    display: flex;
+    flex-direction: row;
+    align-items:center;
+    justify-content: space-between;
+    border: solid black;
+    height: 120px;
+    padding-right: 10px;
+    position: sticky;
+    top: 0;
+}
+
+.header-container__logo{
+    height: 120px;
+}
+
+.section1{
+    border: solid black;
+    height: 500px;
+}
+.section2{
+    border: solid red;
+    height: 500px;
+}
+.section3{
+    border: solid blue;
+    height: 500px;
+}
