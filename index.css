@@ -1,33 +1,25 @@
 body{
     box-sizing: border-box;
     margin: 0;
+    
 }
 
-.header-principal{
+
+.home{
+    background-image: url(./imgs/pexels-abdul-kayum-10845119.jpg);
+    background-size: cover;
+    background-position: center center;
+    height: 700px;
     display: flex;
-    flex-direction: row;
-    align-items:center;
-    justify-content: space-between;
-    border: solid black;
-    height: 120px;
-    padding-right: 10px;
-    position: sticky;
-    top: 0;
+    flex-direction: column;
+    align-items: center;
+    
+    
 }
 
-.header-container__logo{
-    height: 120px;
-}
-
-.section1{
-    border: solid black;
-    height: 500px;
-}
-.section2{
-    border: solid red;
-    height: 500px;
-}
-.section3{
-    border: solid blue;
-    height: 500px;
+.home-title-h1{
+    font-size: 50px;
+    margin-top: 110px;
+    
+    color: #fff;
 }
