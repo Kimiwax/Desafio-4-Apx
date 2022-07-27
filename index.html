@@ -1,31 +1,111 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Kevin Arias Page</title>
-    <link rel="icon" href="./imgs/brandcode.png">
-    <link rel="stylesheet" href="./index.css">
-    <link rel="stylesheet" href="./components/header/header.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="./imgs/brandcode.png" />
+    <link rel="stylesheet" href="./components/header/header.css" />
+    <link rel="stylesheet" href="./components/contact/contact.css" />
     <script defer src="/components/header/header.js"></script>
+    <script defer src="/components/footer/footer.js"></script>
     <script defer src="./index.js"></script>
-    
-
-</head>
-<body>
+    <link rel="stylesheet" href="./index.css" />
+  </head>
+  <body>
     <section class="header-component"></section>
-    
+
     <section class="home">
-        <div class="home-title">
-            <h1 class="home-title-h1">Hola</h1>
-            <h2 class="home-title-h2">Soy Kevin</h2>
-        </div>
+      <div class="home-title">
+        <h1 class="home-title-h1">Hola</h1>
+        <h2 class="home-title-h2">Soy Kevin</h2>
+      </div>
     </section>
 
+    <section class="about-me">
+      <div class="about-me-cont">
+        <h2 class="about-me-subtitule">Soy Kevin</h2>
+        <p class="about-me-text">
+          Algo interesante sobre mi Lorem ipsum dolor sit amet, consectetur
+          adipiscing elit. Nulla dui quam, sollicitudin at enim id, sodales
+          vehicula velit. Aenean lobortis posuere tristique. Phasellus placerat
+          arcu elementum nisi ultrices cursus. Etiam sit amet aliquet lacus.
+          Integer ut iaculis augue, sit amet tincidunt ex. In eleifend justo et
+          sodales semper. Mauris nec tortor lectus. Curabitur nec ultricies
+          dolor.
+        </p>
+      </div>
+    </section>
 
+    <section class="services">
+      <h2 class="services-title">Mis Servicios</h2>
+      <div class="services-content"></div>
+    </section>
 
-    <div class="section2"></div>
-    <div class="section3"></div>
-</body>
+    <template id="services-card-template">
+      <div class="services-card">
+        <img
+          src="https://images.pexels.com/photos/196644/pexels-photo-196644.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+          alt=""
+          class="services-img"
+        />
+        <div class="services-card-content">
+          <h2 class="services-card-title">Trabajo que hice</h2>
+          <p class="services-card-text">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veritatis,
+            dolorum voluptas odit officiis dolor mollitia quos assumenda id
+            laudantium, madfnjklsdvnmksdnjksdfnjksdfnj
+          </p>
+        </div>
+      </div>
+    </template>
+
+    <section class="contact">
+      <div class="contact-form">
+        <div class="contact-form-content">
+          <h2 class="contact-form__titleh2">Contactame</h2>
+          <form class="contact-form-container">
+            <label class="contact-form-container__input-label">
+              <span>NOMBRE</span>
+              <input
+                type="text"
+                name="nombre"
+                class="contact-form-container__field--input-text"
+              />
+            </label>
+            <label class="contact-form-container__input-label">
+              <span>EMAIL</span>
+              <input
+                type="email"
+                name="email"
+                class="contact-form-container__field--input-text"
+              />
+            </label>
+            <label class="contact-form-container__input-label">
+              <span>Mensaje</span>
+              <textarea
+                name="mensaje"
+                class="contact-form-container__field--textarea"
+              ></textarea>
+            </label>
+            <div class="contact-form-container__button-container">
+              <button class="contact-form-container__button-container--button">
+                <span> Enviar</span>
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <section class="footer-container"></section>
+  </body>
 </html>

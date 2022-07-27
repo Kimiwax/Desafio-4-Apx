@@ -1,21 +1,19 @@
 body{
     box-sizing: border-box;
     margin: 0;
-    
 }
 
 
 .home{
-    background-image: url(./imgs/pexels-abdul-kayum-10845119.jpg);
+    background-image: url(./imgs/layered-waves-haikei.svg);
     background-size: cover;
     background-position: center center;
-    height: 700px;
+    height: 500px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    
-    
 }
+
 
 .home-title-h1{
     font-size: 50px;
@@ -23,3 +21,98 @@ body{
     
     color: #fff;
 }
+
+.about-me{
+    height: 538px;
+    background-color: #141414;
+}
+
+.about-me-cont{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 55px;
+}
+
+.about-me-text{
+    margin: 31px;
+}
+
+p{
+    color: #fff;
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+
+
+.services-content{
+    margin-top: 20px;
+    padding: 20px;
+    display:grid;
+    gap: 30px;
+}
+.services-card{
+    border: solid 2px black ;
+    border-radius: 4px;
+}
+.services-img{
+    object-fit: cover;
+    height: 255px;
+    width: 100%;
+
+}
+.services-card-content{
+    padding: 20px;
+}
+.services-card-title{
+    color: black;
+    font-size: 30px;
+    margin: 0;
+}
+.services-card-text{
+    color: black;
+    margin: 0;
+    font-size: 18px;
+}
+
+.footer {
+    background-color: #FFC18E;
+    display: flex;
+    flex-direction: column;
+    height: 400px;
+  }
+  .contenedor-logos {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .logo-footer {
+    margin: 0 0 18px 16px;
+    font-size: 13px;
+  }
+  .p-footer {
+    margin: 18px 0 20px 23px;
+  }
+
+  .logo1 {
+    height: 125px;
+    margin-left: 5px;
+  }
+
+  .logo {
+    margin-left: 20px;
+  }
+  .p-logo {
+    display: inline-block;
+    margin-left: 10px;
+    font-size: 16px;
+  }
+  
+  .logo-redes {
+    height: 27px;
+    width: 27px;
+    vertical-align: middle;
+  }
