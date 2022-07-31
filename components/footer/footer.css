@@ -1,0 +1,39 @@
+.footer {
+    background-image: url(/imgs/footerWaves.svg);
+    background-size:contain;
+    display: flex;
+    flex-direction: column;
+    height: 400px;
+  }
+  .contenedor-logos {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .logo-footer {
+    margin: 0 0 18px 16px;
+    font-size: 13px;
+  }
+  .p-footer {
+    margin: 18px 0 20px 23px;
+  }
+
+  .logo1 {
+    height: 125px;
+    margin-left: 5px;
+  }
+
+  .logo {
+    margin-left: 20px;
+  }
+  .p-logo {
+    display: inline-block;
+    margin-left: 10px;
+    font-size: 16px;
+  }
+  
+  .logo-redes {
+    height: 27px;
+    width: 27px;
+    vertical-align: middle;
+  }

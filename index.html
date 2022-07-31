@@ -12,38 +12,39 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Poppins&display=swap"
       rel="stylesheet"
     />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
     <link rel="icon" href="./imgs/brandcode.png" />
     <link rel="stylesheet" href="./components/header/header.css" />
     <link rel="stylesheet" href="./components/contact/contact.css" />
     <script defer src="/components/header/header.js"></script>
     <script defer src="/components/footer/footer.js"></script>
-    <script defer src="./index.js"></script>
+    <script defer src="./pages/index.js"></script>
     <link rel="stylesheet" href="./index.css" />
+    <link rel="stylesheet" href="./components/footer/footer.css" />
   </head>
   <body>
     <section class="header-component"></section>
 
-    <section class="home">
+    <section class="home"></section>
+
+    <template id="home-cont-template">
       <div class="home-title">
-        <h1 class="home-title-h1">Hola</h1>
-        <h2 class="home-title-h2">Soy Kevin</h2>
+        <h1 class="home-title-h1">Titulo</h1>
+        <h2 class="home-title-h2">Subtitulo</h2>
       </div>
-    </section>
+    </template>
 
     <section class="about-me">
-      <div class="about-me-cont">
-        <h2 class="about-me-subtitule">Soy Kevin</h2>
-        <p class="about-me-text">
-          Algo interesante sobre mi Lorem ipsum dolor sit amet, consectetur
-          adipiscing elit. Nulla dui quam, sollicitudin at enim id, sodales
-          vehicula velit. Aenean lobortis posuere tristique. Phasellus placerat
-          arcu elementum nisi ultrices cursus. Etiam sit amet aliquet lacus.
-          Integer ut iaculis augue, sit amet tincidunt ex. In eleifend justo et
-          sodales semper. Mauris nec tortor lectus. Curabitur nec ultricies
-          dolor.
-        </p>
-      </div>
+      <div class="about-me-cont"></div>
     </section>
+
+    <template id="about-me-template">
+      <h2 class="about-me-subtitule">Soy un subtitulo</h2>
+      <p class="about-me-text">texto de relleno</p>
+    </template>
 
     <section class="services">
       <h2 class="services-title">Mis Servicios</h2>

@@ -1,14 +1,19 @@
-body{
+*{
     box-sizing: border-box;
     margin: 0;
+    padding: 0;
 }
 
+
+.header-component{
+    background-color:   #5a365afe;
+}
 
 .home{
     background-image: url(./imgs/layered-waves-haikei.svg);
     background-size: cover;
     background-position: center center;
-    height: 500px;
+    height: 550px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -18,12 +23,11 @@ body{
 .home-title-h1{
     font-size: 50px;
     margin-top: 110px;
-    
     color: #fff;
 }
 
 .about-me{
-    height: 538px;
+    height: 600px;
     background-color: #141414;
 }
 
@@ -33,6 +37,11 @@ body{
     align-items: center;
     justify-content: center;
     padding-top: 55px;
+}
+
+.about-me-subtitule{
+    text-align: center;
+    margin: 20px;
 }
 
 .about-me-text{
@@ -78,41 +87,3 @@ p{
     font-size: 18px;
 }
 
-.footer {
-    background-color: #FFC18E;
-    display: flex;
-    flex-direction: column;
-    height: 400px;
-  }
-  .contenedor-logos {
-    display: flex;
-    flex-direction: column;
-  }
-
-  .logo-footer {
-    margin: 0 0 18px 16px;
-    font-size: 13px;
-  }
-  .p-footer {
-    margin: 18px 0 20px 23px;
-  }
-
-  .logo1 {
-    height: 125px;
-    margin-left: 5px;
-  }
-
-  .logo {
-    margin-left: 20px;
-  }
-  .p-logo {
-    display: inline-block;
-    margin-left: 10px;
-    font-size: 16px;
-  }
-  
-  .logo-redes {
-    height: 27px;
-    width: 27px;
-    vertical-align: middle;
-  }

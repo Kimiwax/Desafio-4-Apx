@@ -1,12 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <div class="header"></div>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Servicios</title>
+    <link rel="icon" href="./imgs/brandcode.png" />
+    <link rel="stylesheet" href="./components/header/header.css" />
+    <link rel="stylesheet" href="./components/contact/contact.css" />
+    <script defer src="/components/header/header.js"></script>
+    <script defer src="/components/footer/footer.js"></script>
+    <script defer src="./pages/index.js"></script>
+    <link rel="stylesheet" href="./index.css" />
+    <link rel="stylesheet" href="./components/footer/footer.css" />
+    <script defer src="./components/header/header.js"></script>
+    <link rel="stylesheet" href="./components/header/header.css" />
+  </head>
+  <body>
+    <section class="header-component"></section>
+    <section class="services">
+      <h2 class="services-title">Mis Servicios</h2>
+      <div class="services-content"></div>
+    </section>
+
+    <template id="services-card-template">
+      <div class="services-card">
+        <img
+          src="https://images.pexels.com/photos/196644/pexels-photo-196644.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+          alt=""
+          class="services-img"
+        />
+        <div class="services-card-content">
+          <h2 class="services-card-title">Trabajo que hice</h2>
+          <p class="services-card-text">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veritatis,
+            dolorum voluptas odit officiis dolor mollitia quos assumenda id
+            laudantium, madfnjklsdvnmksdnjksdfnjksdfnj
+          </p>
+        </div>
+      </div>
+    </template>
+    <section class="footer-container"></section>
+  </body>
 </html>
