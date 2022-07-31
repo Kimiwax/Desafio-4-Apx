@@ -1,17 +1,27 @@
+.footer-container{
+  background-image: url(/imgs/footer-waves-new.svg);
+  background-size:cover;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: center;
+}
+
 .footer {
-    background-image: url(/imgs/footerWaves.svg);
-    background-size:contain;
     display: flex;
     flex-direction: column;
-    height: 400px;
+    height: 450px;
+
   }
   .contenedor-logos {
     display: flex;
     flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
   }
 
   .logo-footer {
-    margin: 0 0 18px 16px;
     font-size: 13px;
   }
   .p-footer {
@@ -19,12 +29,14 @@
   }
 
   .logo1 {
-    height: 125px;
-    margin-left: 5px;
+    height: 35px;
+    margin-top: 50px;
+    margin-left: 20px;
   }
 
   .logo {
-    margin-left: 20px;
+    margin-top: 15px;
+
   }
   .p-logo {
     display: inline-block;

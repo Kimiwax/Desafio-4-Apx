@@ -1,5 +1,5 @@
 .contact-form-content{
-    height: 500px;
+    height: 700px;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -8,17 +8,20 @@
 }
 
 .contact-form__titleh2{
-    margin: 0px;
-    font-weight: 700;
-    font-size: 32px;
+    font-size: 36px;
 }
 
 .contact-form-container{
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    width: 350px;
+    max-width: 350px;
     color: #fff;
+    font-family: 'Poppins', sans-serif;
+}
+
+.contact-form-container__field--input-text{
+    height: 30px;
+    font-size:15px ;
     font-family: 'Poppins', sans-serif;
 }
 
@@ -32,28 +35,13 @@
 
 .contact-form-container__field--textarea{
     height: 135px;
+    font-size:15px ;
+    font-family: 'Poppins', sans-serif;
 }
 
-/*.contact-form-container__button-container--button{
-    height: 45px;
-    color: #fff;
-    background-color: #2C2C2C;
-    padding: 18px 30px;
-    font-size: 16px;
-    margin-top: 20px;
-    border: none;
-    position: relative;
-    cursor: pointer;
-    overflow: hidden;
-    background: #ff4655;
-    border-radius: 0;
-    min-width: 350px;
-   z-index: 0;
-   text-transform: uppercase;
-   font-weight: 600;
-   letter-spacing: 2px;
-
-}*/
+.contact-form-container__button-container{
+    padding-bottom: 90px;
+}
 .contact-form-container__button-container--button{
     padding: 18px 30px;
     font-size: 16px;

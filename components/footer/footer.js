@@ -2,8 +2,8 @@ function footerComponent(elemento) {
   const footerComponentElemento = document.createElement("div");
   footerComponentElemento.innerHTML = `<footer class="footer">
   <div class="logo-footer">
-    <img class="logo1" src="./imgs/logo-z-1.png" alt="" />
-    <p class="p-footer">© 2022 Kevin</p>
+    <img class="logo1" src="./imgs/logo-footer.png" alt="" />
+    
   </div>
   <div class="contenedor-logos">
     <a

@@ -27,7 +27,6 @@
 }
 
 .about-me{
-    height: 600px;
     background-color: #141414;
 }
 
@@ -36,16 +35,17 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding-top: 55px;
 }
 
 .about-me-subtitule{
     text-align: center;
     margin: 20px;
+    padding-top: 55px;
 }
 
 .about-me-text{
     margin: 31px;
+    padding-bottom: 100px;
 }
 
 p{
@@ -55,35 +55,46 @@ p{
 }
 
 
-
+.services-title{
+    color: #2C2C2C;
+    text-align: center;
+    margin-top: 55px;
+    margin-bottom: 55px;
+    font-weight: 700;
+}
 
 .services-content{
     margin-top: 20px;
     padding: 20px;
     display:grid;
     gap: 30px;
+    border-radius: 7px 7px 7px 7px;
 }
 .services-card{
-    border: solid 2px black ;
-    border-radius: 4px;
+    
+    border-radius: 7px 7px 7px 7px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 .services-img{
     object-fit: cover;
     height: 255px;
     width: 100%;
-
+    border-radius: 7px 7px 7px 7px;
 }
 .services-card-content{
     padding: 20px;
 }
 .services-card-title{
     color: black;
-    font-size: 30px;
+    font-size: 24px;
+    text-align: center;
     margin: 0;
+    margin-bottom: 20px;
 }
 .services-card-text{
     color: black;
     margin: 0;
     font-size: 18px;
+    text-align: center;
 }
 
