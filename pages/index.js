@@ -123,6 +123,8 @@ function main() {
   ///HEADER///
   const header = document.querySelector(".header-component");
   headerComponent(header);
+  const contact = document.querySelector(".contact");
+  contactComponent(contact);
   ///FOOTER///
   const footer = document.querySelector(".footer-container");
   footerComponent(footer);

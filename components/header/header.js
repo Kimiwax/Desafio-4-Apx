@@ -9,9 +9,9 @@ function headerComponent(e) {
     </div>
     <div class= "header-menu">
     <ul class="menu">
-    <li><a class="menuItem" href="#">Portfolio</a></li>
-    <li><a class="menuItem" href="./">Servicio</a></li>
-    <li><a class="menuItem" href="#">Contacto</a></li>
+    <li><a class="menuItem" href="">Portfolio</a></li>
+    <li><a class="menuItem" href="./services.html">Servicios</a></li>
+    <li><a class="menuItem" href="./contact.html">Contacto</a></li>
   </ul>
   <button class="hamburger">
     <i class="menuIcon material-icons">menu</i>
