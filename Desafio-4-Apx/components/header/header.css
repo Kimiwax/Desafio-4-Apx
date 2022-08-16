@@ -1,0 +1,141 @@
+
+.header-principal{
+    display: flex;
+    flex-direction: row;
+    align-items:center;
+    justify-content: space-between;
+    height: 100px;
+    padding-right: 10px;
+}
+
+.header-windowM{
+  display: none;
+}
+@media (min-width:768px) {
+  .header-windowM{
+    display: flex;
+    border: solid black;
+    height: 40px;
+    width: 400px;
+    align-items: center;
+    justify-content: space-around;
+  }
+}
+
+
+
+
+.header-container__logo{
+    height: 65px;
+    margin-left: 10px;
+}
+@media (min-width:768px) {
+  .header-container__logo{
+    height: 90px
+  }
+}
+
+  h1 {
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: 1px;
+    word-spacing: 0.15em;
+    font-size: 48px;
+    line-height: 1.2;
+    /*transform: translateY(52%);*/
+  }
+
+  h2{
+    font-size: 32px;
+    color: #FFFF;
+    font-family: 'Montserrat', sans-serif;
+  }
+  
+  
+  #toggle {
+    display: none;
+  }
+  
+  /**
+    Hamburger
+  **/
+
+  .header-menu{
+    height: 65px;
+    width: 65px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  @media (min-width:768px) {
+    .header-menu{
+      display: none;
+    }
+  }
+  .menuItem {
+    display: block;
+    margin: 2rem 4rem;
+    font-size: 45px;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    color: white;
+    text-decoration: none;
+  }
+  @media (min-width:768px) {
+    .menuItem{
+      display: none;
+    }
+  }
+  
+  .menuItem:hover {
+    text-decoration: underline;
+  }
+  .material-icons{
+    font-size: 40px;
+  }
+  .hamburger {
+    position: sticky;
+    padding:1px;
+    border: black solid 1px;
+    background: #CA4E79;
+    cursor: pointer;
+  }
+  /*<div class="header-windowM">
+  <div class="header-windowM-option>
+    <p class="header-windowM-p>Portfolio</p>
+  </div>
+</div>*/
+  @media (min-width:768px) {
+    .hamburger{
+      display: none;
+    }
+  }
+  
+  .closeIcon {
+    display: none;
+  }
+  
+  .menu {
+    position: fixed;
+    transform: translateY(-100%);
+    transition: transform 0.2s;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url(/imgs/menuBackground.svg);
+    background-size: cover;
+    color: white;
+    list-style: none;
+    padding-top: 4rem;
+  }
+  @media (min-width:768px) {
+    .menu{
+      display: none;
+    }
+  }
+  
+  
+  .showMenu {
+    transform: translateY(0);
+  }

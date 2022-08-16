@@ -1,0 +1,102 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+.header-component{
+    background-color:   #5a365afe;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.home{
+    background-image: url(./imgs/layered-waves-haikei.svg);
+    background-size: cover;
+    background-position: center center;
+    height: 550px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.home-title-h1{
+    font-size: 50px;
+    margin-top: 110px;
+    color: #fff;
+}
+
+.about-me{
+    background-color: #141414;
+}
+
+.about-me-cont{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.about-me-subtitule{
+    text-align: center;
+    margin: 20px;
+    padding-top: 55px;
+}
+
+.about-me-text{
+    margin: 31px;
+    padding-bottom: 100px;
+}
+
+p{
+    color: #fff;
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+.services-title{
+    color: #2C2C2C;
+    text-align: center;
+    margin-top: 55px;
+    margin-bottom: 55px;
+    font-weight: 700;
+}
+
+.services-content{
+    margin-top: 20px;
+    padding: 20px;
+    display:grid;
+    gap: 30px;
+    border-radius: 7px 7px 7px 7px;
+}
+.services-card{
+    
+    border-radius: 7px 7px 7px 7px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.services-img{
+    object-fit: cover;
+    height: 255px;
+    width: 100%;
+    border-radius: 7px 7px 7px 7px;
+}
+.services-card-content{
+    padding: 20px;
+}
+.services-card-title{
+    color: black;
+    font-size: 24px;
+    text-align: center;
+    margin: 0;
+    margin-bottom: 20px;
+}
+.services-card-text{
+    color: black;
+    margin: 0;
+    font-size: 18px;
+    text-align: center;
+}
+

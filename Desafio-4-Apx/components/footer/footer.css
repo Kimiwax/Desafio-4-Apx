@@ -1,0 +1,51 @@
+.footer-container{
+  background-image: url(/imgs/footer-waves-new.svg);
+  background-size:cover;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: center;
+}
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    height: 450px;
+
+  }
+  .contenedor-logos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
+  }
+
+  .logo-footer {
+    font-size: 13px;
+  }
+  .p-footer {
+    margin: 18px 0 20px 23px;
+  }
+
+  .logo1 {
+    height: 35px;
+    margin-top: 50px;
+    margin-left: 20px;
+  }
+
+  .logo {
+    margin-top: 15px;
+
+  }
+  .p-logo {
+    display: inline-block;
+    margin-left: 10px;
+    font-size: 16px;
+  }
+  
+  .logo-redes {
+    height: 27px;
+    width: 27px;
+    vertical-align: middle;
+  }
