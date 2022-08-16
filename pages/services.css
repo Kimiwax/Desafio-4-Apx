@@ -9,9 +9,27 @@ p{
   padding: 0;
 }
 body{
-  background-attachment: fixed;
+  /*background-attachment: fixed;
   background-image: url(/imgs/Calm\ Darya.jpg);
-  background-size: contain;
+  background-size: contain;*/
+
+  margin: 0;
+	width: 100%;
+	height: 100vh;
+	background: linear-gradient(-45deg, #c31432, #240b36, #23a6d5, #23d5ab);
+	background-size: 400% 400%;
+	animation: gradiente 15s ease infinite;
+}
+@keyframes gradiente {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
 }
 .header-component{
   /* From https://css.glass */

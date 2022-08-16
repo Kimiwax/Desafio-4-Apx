@@ -8,9 +8,31 @@
     padding-right: 10px;
 }
 
+.header-windowM{
+  display: none;
+}
+@media (min-width:768px) {
+  .header-windowM{
+    display: flex;
+    border: solid black;
+    height: 40px;
+    width: 400px;
+    align-items: center;
+    justify-content: space-around;
+  }
+}
+
+
+
+
 .header-container__logo{
     height: 65px;
     margin-left: 10px;
+}
+@media (min-width:768px) {
+  .header-container__logo{
+    height: 90px
+  }
 }
 
   h1 {
@@ -45,6 +67,11 @@
     align-items: center;
     justify-content: center;
   }
+  @media (min-width:768px) {
+    .header-menu{
+      display: none;
+    }
+  }
   .menuItem {
     display: block;
     margin: 2rem 4rem;
@@ -53,6 +80,11 @@
     text-align: center;
     color: white;
     text-decoration: none;
+  }
+  @media (min-width:768px) {
+    .menuItem{
+      display: none;
+    }
   }
   
   .menuItem:hover {
@@ -67,6 +99,16 @@
     border: black solid 1px;
     background: #CA4E79;
     cursor: pointer;
+  }
+  /*<div class="header-windowM">
+  <div class="header-windowM-option>
+    <p class="header-windowM-p>Portfolio</p>
+  </div>
+</div>*/
+  @media (min-width:768px) {
+    .hamburger{
+      display: none;
+    }
   }
   
   .closeIcon {
@@ -87,6 +129,12 @@
     list-style: none;
     padding-top: 4rem;
   }
+  @media (min-width:768px) {
+    .menu{
+      display: none;
+    }
+  }
+  
   
   .showMenu {
     transform: translateY(0);

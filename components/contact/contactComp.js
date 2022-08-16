@@ -40,4 +40,9 @@ function contactComponent(elemento) {
   `;
 
   elemento.appendChild(conntactComponentEl);
+
+  const formElement = document.querySelector(".contact-form-container");
+  formElement.addEventListener("submit", (event) => {
+    event.preventDefault();
+  });
 }
