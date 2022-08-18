@@ -7,18 +7,11 @@ function headerComponent(e) {
       ><img src="./imgs/logo3.png" alt="" class="header-container__logo"
     /></a>
   </div>
-  <div class="header-windowM">
-    <div class="header-windowM-option">
-      <a href="./portfolio.html">Portfolio</a>
-      <p class="header-windowM-p">Portfolio</p>
-    </div>
-    <div class="header-windowM-option">
-      <p class="header-windowM-p">Servicios</p>
-    </div>
-    <div class="header-windowM-option">
-      <p class="header-windowM-p">Contacto</p>
-    </div>
-  </div>
+    <nav id="nav-fullscreen">
+      <a class="link-1" href="./portfolio.html">Portfolio</a>
+      <a class="link-1" href="./services.html">Servicios</a>
+      <a class="link-1" href="./contact.html">Contacto</a>
+    </nav>
   <div class="header-menu">
     <ul class="menu">
       <li><a class="menuItem" href="./portfolio.html">Portfolio</a></li>
@@ -30,7 +23,8 @@ function headerComponent(e) {
       <i class="closeIcon material-icons">close</i>
     </button>
   </div>
-</header>`;
+</header>
+`;
 
   e.appendChild(headerComponentElement);
   function burguerBoton() {

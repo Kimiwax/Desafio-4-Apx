@@ -38,18 +38,29 @@ function getAboutmeContenful() {
     .then((data) => {
       console.log(data);
       const fieldsCollection = data.items.map((item) => {
+        const idImagen = item.fields.imagenaboutme.sys.id;
+        const imagen = buscarImagen(idImagen, data);
+        const Img = imagen.fields.file.url;
         return {
           title: item.fields.tituloaboutme,
           parrafo: item.fields.descripcionaboutme,
+          image: Img,
         };
       });
       return fieldsCollection;
     });
 }
+function buscarImagen(id, data) {
+  const imagen = data.includes.Asset.find((asset) => {
+    return asset.sys.id == id;
+  });
+
+  return imagen;
+}
 function addAboutMe(params) {
   const template = document.querySelector("#about-me-template");
   const container = document.querySelector(".about-me-cont");
-
+  template.content.querySelector(".about-me-img").src = params.image;
   template.content.querySelector(".about-me-subtitule").textContent =
     params.title;
   template.content.querySelector(".about-me-text").textContent = params.parrafo;
@@ -71,12 +82,6 @@ function addServicesCard(params) {
   container.appendChild(clone);
 }
 
-function obtenerID(idImg, data) {
-  data.includes.Asset.find((element) => {
-    return element.sys.id == idImg;
-  });
-}
-
 function getContenfulCards() {
   return fetch(
     "https://cdn.contentful.com/spaces/lic78vgan6di/environments/master/entries?access_token=JpS3-IfVxIwLHmtJnRbdhUBEDVv6MEnMT2-sVKX2fQI&&content_type=misServices"
@@ -86,12 +91,13 @@ function getContenfulCards() {
     })
     .then((dataJson) => {
       const fieldsCollection = dataJson.items.map((item) => {
-        obtenerID(item.fields.servicesImg.sys.id, dataJson);
-        const imgUrl = dataJson.includes.Asset[0].fields.file.url;
+        const idImagen = item.fields.servicesImg.sys.id;
+        const imagen = buscarImagen(idImagen, dataJson);
+        const Img = imagen.fields.file.url;
         return {
           title: item.fields.servicesTitle,
           description: item.fields.servicesDescription,
-          image: imgUrl,
+          image: Img,
         };
       });
 

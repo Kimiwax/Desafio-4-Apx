@@ -29,51 +29,56 @@
     <link rel="stylesheet" href="./components/footer/footer.css" />
   </head>
   <body>
-    <section class="header-component"></section>
+    <div class="contenedor">
+      <section class="header-component"></section>
 
-    <section class="home"></section>
+      <section class="home"></section>
 
-    <template id="home-cont-template">
-      <div class="home-title">
-        <h1 class="home-title-h1">Titulo</h1>
-        <h2 class="home-title-h2">Subtitulo</h2>
-      </div>
-    </template>
-
-    <section class="about-me">
-      <div class="about-me-cont"></div>
-    </section>
-
-    <template id="about-me-template">
-      <h2 class="about-me-subtitule">Soy un subtitulo</h2>
-      <p class="about-me-text">texto de relleno</p>
-    </template>
-
-    <section class="services">
-      <h2 class="services-title">Mis Servicios</h2>
-      <div class="services-content"></div>
-    </section>
-
-    <template id="services-card-template">
-      <div class="services-card">
-        <img
-          src="https://images.pexels.com/photos/196644/pexels-photo-196644.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-          alt=""
-          class="services-img"
-        />
-        <div class="services-card-content">
-          <h2 class="services-card-title">Trabajo que hice</h2>
-          <p class="services-card-text">
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veritatis,
-            dolorum voluptas odit officiis dolor mollitia quos assumenda id
-            laudantium, madfnjklsdvnmksdnjksdfnjksdfnj
-          </p>
+      <template id="home-cont-template">
+        <div class="home-title">
+          <h1 class="home-title-h1">Titulo</h1>
+          <h2 class="home-title-h2">Subtitulo</h2>
         </div>
-      </div>
-    </template>
+      </template>
 
-    <section class="contact"></section>
+      <section class="about-me">
+        <div class="about-me-cont"></div>
+      </section>
 
-    <section class="footer-container"></section>
+      <template id="about-me-template">
+        <img src="/imgs/brandcode.png" alt="" class="about-me-img" />
+        <div class="about-me-contenedor-text">
+          <h2 class="about-me-subtitule">Soy un subtitulo</h2>
+          <p class="about-me-text">texto de relleno</p>
+        </div>
+      </template>
+
+      <section class="services">
+        <h2 class="services-title">Mis Servicios</h2>
+        <div class="services-content"></div>
+      </section>
+
+      <template id="services-card-template">
+        <div class="services-card">
+          <img
+            src="https://images.pexels.com/photos/196644/pexels-photo-196644.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+            alt=""
+            class="services-img"
+          />
+          <div class="services-card-content">
+            <h2 class="services-card-title">Trabajo que hice</h2>
+            <p class="services-card-text">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+              Veritatis, dolorum voluptas odit officiis dolor mollitia quos
+              assumenda id laudantium, madfnjklsdvnmksdnjksdfnjksdfnj
+            </p>
+          </div>
+        </div>
+      </template>
+
+      <section class="contact"></section>
+
+      <section class="footer-container"></section>
+    </div>
   </body>
 </html>
