@@ -114,7 +114,7 @@ nav{
     position: sticky;
     padding:1px;
     border: black solid 1px;
-    background: #CA4E79;
+    background: transparent;
     cursor: pointer;
   }
   

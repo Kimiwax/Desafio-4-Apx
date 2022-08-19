@@ -8,10 +8,26 @@
   align-items: center;
 }
 
+@media (min-width:768px){
+  .footer-container{
+    display:block;
+    flex-direction: row;
+  }
+}
+
 .footer {
     display: flex;
     flex-direction: column;
     height: 450px;
+
+  }
+
+  @media (min-width:768px){
+    .footer{
+      flex-direction: row;
+      justify-content: space-between;
+      height: 350px;
+    }
 
   }
   .contenedor-logos {
@@ -21,9 +37,25 @@
     margin-top: 30px;
   }
 
+  @media (min-width:768px){
+    .contenedor-logos{
+      justify-content: center;
+      margin-right: 40px;
+    }
+  }
+
+
   .logo-footer {
     font-size: 13px;
   }
+
+  @media (min-width:768px){
+    .logo-footer{
+      display: flex;
+      align-items: center;
+    }
+  }
+
   .p-footer {
     margin: 18px 0 20px 23px;
   }
@@ -42,8 +74,27 @@
     display: inline-block;
     margin-left: 10px;
     font-size: 16px;
+
+    background:
+    linear-gradient(
+      to right,
+      transparent,
+      transparent
+    ),
+    linear-gradient(
+      to right,
+      rgba(255, 0, 0, 1),
+      rgba(255, 0, 180, 1),
+      rgba(0, 100, 200, 1)
+  );
+  background-size: 100% 3px, 0 3px;
+  background-position: 100% 100%, 0 100%;
+  background-repeat: no-repeat;
+  transition: background-size 400ms;
   }
-  
+  .p-logo:hover{
+    background-size: 0 3px, 100% 3px;
+  }
   .logo-redes {
     height: 27px;
     width: 27px;

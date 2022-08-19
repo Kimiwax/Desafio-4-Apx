@@ -17,7 +17,7 @@
 	width: 100%;
 	height: 100vh;
 	background: linear-gradient(-45deg, #59c173, #a17fe0, #5d26c1);
-	background-size: 400% 400%;
+	background-size: 800% 800%;
 	animation: gradiente 15s ease infinite;
   }
 
@@ -43,7 +43,7 @@
       position: sticky;
       padding: 1px;
       border: black solid 1px;
-      background: #2ebf91;
+      background: transparent;
       cursor: pointer;
   }
   
@@ -62,9 +62,35 @@
     display:grid;
     gap: 30px;
     border-radius: 7px 7px 7px 7px;
+    margin-bottom: 120px;
   }
+
+  @media (min-width:768px){
+    .portfolio{
+      display: flex;
+      flex-direction: column;
+    }
+  }
+
+
+  .portfolio-content{
+    display: flex;
+    flex-direction: column;
+    gap: 105px;
+  }
+
+  @media (min-width:768px){
+    .portfolio-content{
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-gap: 100px;
+      
+    }
+  }
+
   .portfolio-card{
-    
+    display: flex;
+    flex-direction: column;
     border-radius: 7px 7px 7px 7px;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   }

@@ -79,6 +79,17 @@ p{
     font-family: 'Poppins', sans-serif;
 }
 
+.services{
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    background: #FAEEE7;
+  }
+  @media(min-width:768px){
+    .services{
+        height: 800px;
+    }
+  }
 
 .services-title{
     color: #2C2C2C;

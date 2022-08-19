@@ -16,7 +16,7 @@ function footerComponent(elemento) {
     </a>
 
     <a
-      href="https://ar.linkedin.com/"
+      href="https://www.youtube.com/watch?v=Pmo3lT5ckdY"
       style="color: #141414"
       class="logo"
     >
