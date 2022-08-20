@@ -1,5 +1,5 @@
 .footer-container{
-  background-image: url("/footer-waves-new.svg");
+  background-image: url("../footer-waves-new.svg");
   background-size:cover;
   background-repeat: no-repeat;
   display: flex;
