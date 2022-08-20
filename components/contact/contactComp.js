@@ -40,9 +40,25 @@ function contactComponent(elemento) {
   `;
 
   elemento.appendChild(conntactComponentEl);
+  requestPost();
+}
 
-  const formElement = document.querySelector(".contact-form-container");
-  formElement.addEventListener("submit", (event) => {
+function requestPost() {
+  const formulario = document.querySelector(".contact-form-container");
+  formulario.addEventListener("submit", event => {
     event.preventDefault();
+
+    const data = new FormData(event.target);
+    const obj = Object.fromEntries(data.entries());
+    console.log(obj);
+
+    fetch("https://apx-api.vercel.app/api/utils/dwf", {
+      method: "POST",
+      headers: { "content-type": "application/json" },
+      body: JSON.stringify({
+        to: "kevinaarias099@gmail.com",
+        message: `Nuevo correo de: ${obj.nombre} con mail ${obj.email}, Mensaje: ${obj.mensaje}`,
+      }),
+    });
   });
 }
