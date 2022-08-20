@@ -50,7 +50,7 @@ function requestPost() {
 
     const data = new FormData(event.target);
     const obj = Object.fromEntries(data.entries());
-    console.log(obj);
+    //////console.log(obj);
 
     fetch("https://apx-api.vercel.app/api/utils/dwf", {
       method: "POST",
