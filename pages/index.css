@@ -11,7 +11,7 @@
 }
 
 .home{
-    background-image: url("../imgs/home.svg");
+    background-image: url("./imgs/home.svg");
     background-size: cover;
     background-position: center center;
     height: 550px;
