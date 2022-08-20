@@ -6,9 +6,27 @@
     align-items: center;
     background-color: #000;
 }
+@media (min-width:768px){
+    .contact-form-content{
+        margin: 0 auto;
+        max-width: 900px;
+    }
+}
+@media (min-width:768px){
+    .contact-form-content{
+        flex-direction: row !important;
+        align-items: flex-start !important;
+        margin-top: 135px;
 
-.contact-form__titleh2{
+    }
+}
+.contact-form-content__title{
     font-size: 36px;
+}
+@media (min-width:768px){
+    .contact-form-content__title{
+        font-size: 42px;
+    }
 }
 
 .contact-form-container{
@@ -19,30 +37,45 @@
     font-family: 'Poppins', sans-serif;
 }
 
-.contact-form-container__field--input-text{
+.contact-form-container__input{
     height: 30px;
     font-size:15px ;
     font-family: 'Poppins', sans-serif;
 }
-
-.contact-form-container__input-label{
+@media (min-width:768px){
+    .contact-form-container__input{
+        height: 35px;
+        font-size: 18px;
+        border: solid black 2px;
+    }
+}
+.contact-form-container__label{
     font-weight: 400;
     font-size: 13px;
     display: flex;
     flex-direction: column;
     margin-top: 20px;
 }
-
-.contact-form-container__field--textarea{
+@media (min-width:768px){
+    .contact-form-container__label{
+        font-size: 16px;
+    }
+}
+.contact-form-container__textarea{
     height: 135px;
     font-size:15px ;
     font-family: 'Poppins', sans-serif;
 }
-
-.contact-form-container__button-container{
+@media (min-width:768px){
+    .contact-form-container__textarea{
+        font-size: 18px;
+        border: solid black 2px;
+    }
+}
+.contact-form-container__container{
     padding-bottom: 90px;
 }
-.contact-form-container__button-container--button{
+.contact-form-container__button{
     padding: 18px 30px;
     font-size: 16px;
     border: none;
@@ -61,7 +94,7 @@
     margin-top: 60px;
     font-family: 'Poppins', sans-serif;
 }
-.contact-form-container__button-container--button::before {
+.contact-form-container__button::before {
     content: "";
     position: absolute;
     display: block;
@@ -74,6 +107,15 @@
     z-index: -1;
     transform: translateX(-500px) skew(-20deg);
 }
-.contact-form-container__button-container--button:hover::before{
+.contact-form-container__button:hover::before{
     transform: translateX(0px) skew(-20deg);
+}
+
+.contact-form-container__enviado{
+    display: none;
+    color: #fff;
+    border: solid 1px;
+    margin: 0 auto;
+    padding: 20px;
+    margin-top: 30px;
 }

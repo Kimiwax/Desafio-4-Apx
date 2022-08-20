@@ -11,12 +11,12 @@ function getContenfulPortfolio() {
   return fetch(
     "https://cdn.contentful.com/spaces/lic78vgan6di/environments/master/entries?access_token=JpS3-IfVxIwLHmtJnRbdhUBEDVv6MEnMT2-sVKX2fQI&&content_type=portfolio"
   )
-    .then((resp) => {
+    .then(resp => {
       return resp.json();
     })
-    .then((data) => {
+    .then(data => {
       console.log(data);
-      const fieldsCollections = data.items.map((item) => {
+      const fieldsCollections = data.items.map(item => {
         const idImagen = item.fields.portfolioimg.sys.id;
         const imagen = buscarImagen(idImagen, data);
         const Img = imagen.fields.file.url;
@@ -30,7 +30,7 @@ function getContenfulPortfolio() {
     });
 }
 function buscarImagen(id, data) {
-  const imagen = data.includes.Asset.find((asset) => {
+  const imagen = data.includes.Asset.find(asset => {
     return asset.sys.id == id;
   });
 
@@ -41,9 +41,9 @@ function addPortfolioCards(params) {
   const template = document.querySelector("#portfolio-card-template");
   const container = document.querySelector(".portfolio-content");
 
-  template.content.querySelector(".portfolio-card-title").textContent =
+  template.content.querySelector(".portfolio-card-content__title").textContent =
     params.title;
-  template.content.querySelector(".portfolio-card-text").textContent =
+  template.content.querySelector(".portfolio-card-content__text").textContent =
     params.description;
   template.content.querySelector(".portfolio-img").src = params.image;
 
@@ -53,7 +53,7 @@ function addPortfolioCards(params) {
 
 function main() {
   addComponents();
-  getContenfulPortfolio().then((port) => {
+  getContenfulPortfolio().then(port => {
     for (const i of port) {
       addPortfolioCards(i);
     }

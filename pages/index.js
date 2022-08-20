@@ -2,12 +2,12 @@ function getHomeContentful() {
   return fetch(
     "https://cdn.contentful.com/spaces/lic78vgan6di/environments/master/entries?access_token=JpS3-IfVxIwLHmtJnRbdhUBEDVv6MEnMT2-sVKX2fQI&&content_type=home"
   )
-    .then((res) => {
+    .then(res => {
       return res.json();
     })
-    .then((data) => {
+    .then(data => {
       console.log(data);
-      const fieldsCollection = data.items.map((item) => {
+      const fieldsCollection = data.items.map(item => {
         return {
           title: item.fields.hometitle,
           subtitle: item.fields.homesubtitle,
@@ -21,8 +21,8 @@ function addHome(params) {
   const template = document.querySelector("#home-cont-template");
   const container = document.querySelector(".home");
 
-  template.content.querySelector(".home-title-h1").textContent = params.title;
-  template.content.querySelector(".home-title-h2").textContent =
+  template.content.querySelector(".home-title__h1").textContent = params.title;
+  template.content.querySelector(".home-title__h2").textContent =
     params.subtitle;
   const clone = document.importNode(template.content, true);
   container.appendChild(clone);
@@ -32,12 +32,12 @@ function getAboutmeContenful() {
   return fetch(
     "https://cdn.contentful.com/spaces/lic78vgan6di/environments/master/entries?access_token=JpS3-IfVxIwLHmtJnRbdhUBEDVv6MEnMT2-sVKX2fQI&&content_type=aboutme"
   )
-    .then((res) => {
+    .then(res => {
       return res.json();
     })
-    .then((data) => {
+    .then(data => {
       console.log(data);
-      const fieldsCollection = data.items.map((item) => {
+      const fieldsCollection = data.items.map(item => {
         const idImagen = item.fields.imagenaboutme.sys.id;
         const imagen = buscarImagen(idImagen, data);
         const Img = imagen.fields.file.url;
@@ -51,7 +51,7 @@ function getAboutmeContenful() {
     });
 }
 function buscarImagen(id, data) {
-  const imagen = data.includes.Asset.find((asset) => {
+  const imagen = data.includes.Asset.find(asset => {
     return asset.sys.id == id;
   });
 
@@ -60,10 +60,13 @@ function buscarImagen(id, data) {
 function addAboutMe(params) {
   const template = document.querySelector("#about-me-template");
   const container = document.querySelector(".about-me-cont");
-  template.content.querySelector(".about-me-img").src = params.image;
-  template.content.querySelector(".about-me-subtitule").textContent =
-    params.title;
-  template.content.querySelector(".about-me-text").textContent = params.parrafo;
+  template.content.querySelector(".about-me__img").src = params.image;
+  template.content.querySelector(
+    ".about-me-contenedor-text__subtitule"
+  ).textContent = params.title;
+  template.content.querySelector(
+    ".about-me-contenedor-text__text"
+  ).textContent = params.parrafo;
   const clone = document.importNode(template.content, true);
   container.appendChild(clone);
 }
@@ -72,11 +75,11 @@ function addServicesCard(params) {
   const template = document.querySelector("#services-card-template");
   const container = document.querySelector(".services-content");
 
-  template.content.querySelector(".services-card-title").textContent =
+  template.content.querySelector(".services-card-content__title").textContent =
     params.title;
-  template.content.querySelector(".services-card-text").textContent =
+  template.content.querySelector(".services-card-content__text").textContent =
     params.description;
-  template.content.querySelector(".services-img").src = params.image;
+  template.content.querySelector(".services-content__img").src = params.image;
 
   const clone = document.importNode(template.content, true);
   container.appendChild(clone);
@@ -86,11 +89,11 @@ function getContenfulCards() {
   return fetch(
     "https://cdn.contentful.com/spaces/lic78vgan6di/environments/master/entries?access_token=JpS3-IfVxIwLHmtJnRbdhUBEDVv6MEnMT2-sVKX2fQI&&content_type=misServices"
   )
-    .then((res) => {
+    .then(res => {
       return res.json();
     })
-    .then((dataJson) => {
-      const fieldsCollection = dataJson.items.map((item) => {
+    .then(dataJson => {
+      const fieldsCollection = dataJson.items.map(item => {
         const idImagen = item.fields.servicesImg.sys.id;
         const imagen = buscarImagen(idImagen, dataJson);
         const Img = imagen.fields.file.url;
@@ -106,19 +109,19 @@ function getContenfulCards() {
 }
 
 function getAllElementsFromContentful() {
-  getHomeContentful().then((homeEl) => {
+  getHomeContentful().then(homeEl => {
     for (const i of homeEl) {
       addHome(i);
     }
   });
 
-  getContenfulCards().then((services) => {
+  getContenfulCards().then(services => {
     for (const i of services) {
       addServicesCard(i);
     }
   });
 
-  getAboutmeContenful().then((aboutmeEl) => {
+  getAboutmeContenful().then(aboutmeEl => {
     for (const i of aboutmeEl) {
       addAboutMe(i);
     }

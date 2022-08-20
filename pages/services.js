@@ -7,22 +7,16 @@ function addComponents() {
   footerComponent(footer);
 }
 
-function obtenerID(idImg, data) {
-  data.includes.Asset.find((element) => {
-    return element.sys.id == idImg;
-  });
-}
-
 function getContenfulServices() {
   return fetch(
     "https://cdn.contentful.com/spaces/lic78vgan6di/environments/master/entries?access_token=JpS3-IfVxIwLHmtJnRbdhUBEDVv6MEnMT2-sVKX2fQI&&content_type=misServices"
   )
-    .then((resp) => {
+    .then(resp => {
       return resp.json();
     })
-    .then((data) => {
+    .then(data => {
       console.log(data);
-      const fieldsCollections = data.items.map((item) => {
+      const fieldsCollections = data.items.map(item => {
         const idImagen = item.fields.servicesImg.sys.id;
         const imagen = buscarImagen(idImagen, data);
         const Img = imagen.fields.file.url;
@@ -38,7 +32,7 @@ function getContenfulServices() {
 }
 
 function buscarImagen(id, data) {
-  const imagen = data.includes.Asset.find((asset) => {
+  const imagen = data.includes.Asset.find(asset => {
     return asset.sys.id == id;
   });
 
@@ -49,11 +43,11 @@ function addServicesCard(params) {
   const template = document.querySelector("#services-card-template");
   const container = document.querySelector(".services-content");
 
-  template.content.querySelector(".services-card-title").textContent =
+  template.content.querySelector(".services-card-content__title").textContent =
     params.title;
-  template.content.querySelector(".services-card-text").textContent =
+  template.content.querySelector(".services-card-content__text").textContent =
     params.description;
-  template.content.querySelector(".services-img").src = params.image;
+  template.content.querySelector(".services-content__img").src = params.image;
 
   const clone = document.importNode(template.content, true);
   container.appendChild(clone);
@@ -61,7 +55,7 @@ function addServicesCard(params) {
 
 function main() {
   addComponents();
-  getContenfulServices().then((services) => {
+  getContenfulServices().then(services => {
     for (const i of services) {
       addServicesCard(i);
     }

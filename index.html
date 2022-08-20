@@ -21,53 +21,54 @@
     <link rel="icon" href="./imgs/brandcode.png" />
     <link rel="stylesheet" href="./components/header/header.css" />
     <link rel="stylesheet" href="./components/contact/contact.css" />
-    <script defer src="/components/header/header.js"></script>
-    <script defer src="/components/contact/contactComp.js"></script>
-    <script defer src="/components/footer/footer.js"></script>
+    <script defer src="./components/header/header.js"></script>
+    <script defer src="./components/contact/contactComp.js"></script>
+    <script defer src="./components/footer/footer.js"></script>
     <script defer src="./pages/index.js"></script>
     <link rel="stylesheet" href="./pages/index.css" />
     <link rel="stylesheet" href="./components/footer/footer.css" />
   </head>
   <body>
     <div class="contenedor">
+      <!--Section de header -->
       <section class="header-component"></section>
-
+      <!--Section de home -->
       <section class="home"></section>
-
+      <!--Template de home -->
       <template id="home-cont-template">
         <div class="home-title">
-          <h1 class="home-title-h1">Titulo</h1>
-          <h2 class="home-title-h2">Subtitulo</h2>
+          <h1 class="home-title__h1">Titulo</h1>
+          <h2 class="home-title__h2">Subtitulo</h2>
         </div>
       </template>
-
+      <!--Section de aboutme -->
       <section class="about-me">
         <div class="about-me-cont"></div>
       </section>
-
+      <!--Template de aboutme -->
       <template id="about-me-template">
-        <img src="/imgs/brandcode.png" alt="" class="about-me-img" />
+        <img src="/imgs/brandcode.png" alt="" class="about-me__img" />
         <div class="about-me-contenedor-text">
-          <h2 class="about-me-subtitule">Soy un subtitulo</h2>
-          <p class="about-me-text">texto de relleno</p>
+          <h2 class="about-me-contenedor-text__subtitule">Soy un subtitulo</h2>
+          <p class="about-me-contenedor-text__text">texto de relleno</p>
         </div>
       </template>
-
+      <!--Section de services -->
       <section class="services">
-        <h2 class="services-title">Mis Servicios</h2>
+        <h2 class="services__title">Mis Servicios</h2>
         <div class="services-content"></div>
       </section>
-
+      <!--Template de services -->
       <template id="services-card-template">
-        <div class="services-card">
+        <div class="services-content__card">
           <img
             src="https://images.pexels.com/photos/196644/pexels-photo-196644.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
             alt=""
-            class="services-img"
+            class="services-content__img"
           />
           <div class="services-card-content">
-            <h2 class="services-card-title">Trabajo que hice</h2>
-            <p class="services-card-text">
+            <h2 class="services-card-content__title">Trabajo que hice</h2>
+            <p class="services-card-content__text">
               Lorem ipsum dolor sit, amet consectetur adipisicing elit.
               Veritatis, dolorum voluptas odit officiis dolor mollitia quos
               assumenda id laudantium, madfnjklsdvnmksdnjksdfnjksdfnj
@@ -75,9 +76,9 @@
           </div>
         </div>
       </template>
-
+      <!--Section de contact -->
       <section class="contact"></section>
-
+      <!--Section de footer -->
       <section class="footer-container"></section>
     </div>
   </body>
