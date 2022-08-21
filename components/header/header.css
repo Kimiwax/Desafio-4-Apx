@@ -136,7 +136,7 @@ nav{
     left: 0;
     right: 0;
     bottom: 0;
-    background-image: url("../imgs/menuBackground.svg");
+    background-color: #7A4069;
     background-size: cover;
     color: white;
     list-style: none;
