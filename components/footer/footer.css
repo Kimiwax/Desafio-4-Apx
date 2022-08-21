@@ -1,9 +1,10 @@
 .footer-container{
-  background-image: url("../imgs/footer.svg");
+  background-color: #001220;
   background-size:cover;
   background-repeat: no-repeat;
   display: flex;
   flex-direction: column;
+  flex-wrap: nowrap;
   align-items: center;
 }
 
