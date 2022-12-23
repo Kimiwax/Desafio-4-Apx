@@ -15,7 +15,7 @@ function footerComponent(elemento) {
     </a>
 
     <a
-      href="https://www.youtube.com/watch?v=Pmo3lT5ckdY"
+      href="https://www.linkedin.com/in/kevin-arias-60804524a/"
       style="color: #141414"
       class="redes-container__logo"
     >
